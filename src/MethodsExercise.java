@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class MethodsExercise {
@@ -14,9 +15,11 @@ public class MethodsExercise {
 //        at MethodsExercise.main(MethodsExercise.java:9)
 //        System.out.println(division(0, 10));
 
-        System.out.println(getInteger(1,10));
+//        System.out.println(getInteger(1,10));
 
+//        System.out.println(factorial());
 
+    rollDice();
 
     }
 
@@ -43,20 +46,57 @@ public class MethodsExercise {
 //    }
 
     //Exercise 2
-    public static int getInteger(int min, int max) {
-        System.out.print("Enter a number between " + min + " and " + max + ": ");
+//    public static int getInteger(int min, int max) {
+//        System.out.print("Enter a number between " + min + " and " + max + ": ");
+//
+//        Scanner input = new Scanner(System.in);
+//        int num = input.nextInt();
+//
+//        if(num >= min && num <= max) {
+//            return num;
+//        } else {
+//            System.out.println("This number is not within range.  Try again");
+//            return getInteger(min, max);
+//        }
+//    }
 
+    //Exercise 3
+
+//    public static long factorial() {
+//        System.out.println("Enter a number between 1 and 10");
+//        Scanner input = new Scanner(System.in);
+//        int userNum = input.nextInt();
+//        long result = 1;
+//
+//        for (var i = userNum; i >= 1; i--) {
+//            result = result * i;
+//        }
+//        return result;
+//    }
+
+
+// Exercise 4
+
+    public static int rollDice() {
+        System.out.println("Please enter a number which will represent the number of sides on each of two dice: ");
         Scanner input = new Scanner(System.in);
-        int num = input.nextInt();
+        int userInput = input.nextInt();
+        System.out.print(userInput);
 
-        if(num >= min && num <= max) {
-            return num;
-        } else {
-            System.out.println("This number is not within range.  Try again");
-            return getInteger(min, max);
+        boolean userRolls = true
+
+        while(userRolls) {
+
+
+
+            System.out.println("Would you like to roll the dice? y - yes, n - no");
+
         }
+
+
+        return userInput;
+
     }
 
 }
-
 
