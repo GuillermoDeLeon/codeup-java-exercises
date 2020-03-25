@@ -19,7 +19,7 @@ public class MethodsExercise {
 
 //        System.out.println(factorial());
 
-    rollDice();
+//    rollDice();
 
     }
 
@@ -77,26 +77,26 @@ public class MethodsExercise {
 
 // Exercise 4
 
-    public static int rollDice() {
-        System.out.println("Please enter a number which will represent the number of sides on each of two dice: ");
-        Scanner input = new Scanner(System.in);
-        int userInput = input.nextInt();
-        System.out.print(userInput);
-
-        boolean userRolls = true
-
-        while(userRolls) {
-
-
-
-            System.out.println("Would you like to roll the dice? y - yes, n - no");
-
-        }
-
-
-        return userInput;
-
-    }
+//    public static int rollDice() {
+//        System.out.println("Please enter a number which will represent the number of sides on each of two dice: ");
+//        Scanner input = new Scanner(System.in);
+//        int userInput = input.nextInt();
+//        System.out.print(userInput);
+//
+//        boolean userRolls = true
+//
+//        while(userRolls) {
+//
+//
+//
+//            System.out.println("Would you like to roll the dice? y - yes, n - no");
+//
+//        }
+//
+//
+//        return userInput;
+//
+//    }
 
 }
 
