@@ -16,35 +16,35 @@ import java.util.Scanner;
 //
 //        Create another class named InputTest that has a static main method that uses all of the methods from the Input class.
 
-public class Input {
-//    public static void main(String[] args) {
-//        System.out.println("text1");
+//public class Input {
+////    public static void main(String[] args) {
+////        System.out.println("text1");
+////    }
+//
+//    private Scanner scanner;
+//
+//    public Input() {
+//        this.scanner = new Scanner(System.in);
 //    }
-
-    private Scanner scanner;
-
-    public Input() {
-        this.scanner = new Scanner(System.in);
-    }
-
-    public String getString() {
-        System.out.println("Enter string input (from the getString method): ");
-        return this.scanner.nextLine();
-    }
-
-    public Boolean yesNo() {
-        System.out.println("[y/n]");
-        if(getString().equalsIgnoreCase("y")) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    public int getInt(int min, in max) {
-        System.out.println("From getInt() ");
-
-    }
-
-
-}
+//
+//    public String getString() {
+//        System.out.println("Enter string input (from the getString method): ");
+//        return this.scanner.nextLine();
+//    }
+//
+//    public Boolean yesNo() {
+//        System.out.println("[y/n]");
+//        if(getString().equalsIgnoreCase("y")) {
+//            return true;
+//        } else {
+//            return false;
+//        }
+//    }
+//
+//    public int getInt(int min, in max) {
+//        System.out.println("From getInt() ");
+//
+//    }
+//
+//
+//}

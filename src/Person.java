@@ -5,7 +5,7 @@ public class Person {
 
     //constructor that accepts String value
     public Person(String input) {
-        System.out.println("A person is being created." );
+//        System.out.println("A person is being created." );
         this.name = input;
     }
 
