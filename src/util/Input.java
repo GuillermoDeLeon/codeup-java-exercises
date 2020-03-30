@@ -16,35 +16,58 @@ import java.util.Scanner;
 //
 //        Create another class named InputTest that has a static main method that uses all of the methods from the Input class.
 
-//public class Input {
-////    public static void main(String[] args) {
-////        System.out.println("text1");
-////    }
-//
-//    private Scanner scanner;
-//
-//    public Input() {
-//        this.scanner = new Scanner(System.in);
+public class Input {
+    public static void main(String[] args) {
+        System.out.println("text1");
+    }
+
+    private Scanner scanner;
+
+    public Input() {
+        this.scanner = new Scanner(System.in);
+    }
+
+    public String getString() {
+        System.out.println("Enter string input (from the getString method): ");
+        return this.scanner.nextLine();
+    }
+
+    public boolean yesNo() {
+        System.out.println("[y/n]");
+        if(getString().equalsIgnoreCase("y")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public int getInt(int min, int max) {
+        System.out.println("Enter a number between 1 and 10: ");
+        int input = Integer.valueOf(getString());
+
+        try {
+            if(input < min) {
+                System.out.println("The number is lower than the min, try again: ");
+                return getInt(min, max);
+            } else if (input >= max) {
+                System.out.println("The number is higher than the max, tray again: ");
+                return getInt(min, max);
+            }
+            return input;
+        } catch (Exception e) {
+            getInt(min, max);
+            System.out.println("catch");
+        }
+
+        return input;
+    }
+
+//    public int getInt() {
+//        System.out.println("Input a number: ");
+//        int input = scanner.nextInt();
+//        System.out.println("Your input was " + input);
+//        return input;
 //    }
-//
-//    public String getString() {
-//        System.out.println("Enter string input (from the getString method): ");
-//        return this.scanner.nextLine();
-//    }
-//
-//    public Boolean yesNo() {
-//        System.out.println("[y/n]");
-//        if(getString().equalsIgnoreCase("y")) {
-//            return true;
-//        } else {
-//            return false;
-//        }
-//    }
-//
-//    public int getInt(int min, in max) {
-//        System.out.println("From getInt() ");
-//
-//    }
-//
-//
-//}
+
+
+}
