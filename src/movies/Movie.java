@@ -10,13 +10,15 @@ public class Movie {
         this.category = category;
     }
 
+    // Command+N will allow you to create the getters and setter below
+
     public String getTitle() {
-        return this.title;
+        return title;
     }
 
-    public String getCategory() {
-        return this.category;
-    }
+//    public String getCategory() {
+//        return category;
+//    }
 
     public void setTitle(String title) {
         this.title = title;
