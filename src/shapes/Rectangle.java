@@ -24,6 +24,28 @@ package shapes;
 //        area = side ^ 2
 //        Re-run your ShapesTest class. How can you determine which getArea and getPerimeter methods are being called on each object?
 
+public class Rectangle extends Quadrilateral implements Measurable {
+    public Rectangle(double length, double width) {
+        super(length, width);
+    }
+
+    public double getArea() {
+        return length * width;
+    }
+
+    public double getPerimeter() {
+        return (length * 2) + (width * 2);
+    }
+
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+}
+
 //Below exercises are for Inheritance and Polymorphism section
 
 //public class Rectangle {

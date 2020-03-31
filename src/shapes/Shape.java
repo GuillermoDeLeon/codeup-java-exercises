@@ -1,5 +1,5 @@
 package shapes;
 
-abstract public class Shape {
+abstract class Shape {
 
 }
