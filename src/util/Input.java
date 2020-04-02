@@ -27,6 +27,9 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
+    public static void setScanner(Scanner scanner) {
+    }
+
     public String getString() {
         System.out.println("Enter string input (from the getString method): ");
         return this.scanner.nextLine();

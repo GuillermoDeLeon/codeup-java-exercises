@@ -14,6 +14,8 @@ public class Student {  // *** student class ***
     //***REVIEW how this works, is it adding an element or is it adding the actual grade???
     public void addGrade(int grade) {
         this.grades.add(grade); //*** .add method from COLLECTIONS lecture -- add element to collection at specified index
+        //we can comment item below  later, example below used by Casey to check output, not sure why he didn't use this.name and this.grade.
+        System.out.println(name + " just scored a " + grade);
     };
     public double getGradeAverage() {
         double total = 0;
