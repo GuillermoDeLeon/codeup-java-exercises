@@ -1,5 +1,6 @@
 package grades;
 
+
 //Create a map for students and GitHub usernames
 //
 //        Create a class named GradesApplication with a main method. Inside the main method, create a HashMap named students. It should have keys that are strings that represent github usernames, and values that are Student objects. Create at least 4 student objects with at least 3 grades each, and add them to the map.
@@ -16,7 +17,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GradesApplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception{
         HashMap<String, Student> students = new HashMap<>();
 
         //create 4 students and add grades for each
@@ -55,7 +56,5 @@ public class GradesApplication {
             }
             confirmation = Input.yesNo("\tWould you like to see another? [y/n]");
         } while(confirmation); //once user says they don't want to participate, EXIT
-
-
     }
 }

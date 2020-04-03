@@ -15,7 +15,7 @@ public class Student {  // *** student class ***
     public void addGrade(int grade) {
         this.grades.add(grade); //*** .add method from COLLECTIONS lecture -- add element to collection at specified index
         //we can comment item below  later, example below used by Casey to check output, not sure why he didn't use this.name and this.grade.
-        System.out.println(name + " just scored a " + grade);
+//        System.out.println(name + " just scored a " + grade); //this prints out the grades
     };
     public double getGradeAverage() {
         double total = 0;
