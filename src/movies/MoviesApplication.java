@@ -21,6 +21,7 @@ public class MoviesApplication {
                 System.out.println(movie.getTitle());
             }
 
+
         } else {
             System.out.println("You exited");
         }
